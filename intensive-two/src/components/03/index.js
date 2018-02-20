@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 
-export default class ComponentName extends Component {
+export default class Title extends Component {
   constructor() {
     super();
     this.state = {};
   }
-  componentDidMount() {}
+    componentDidMount() {
+      this.setState({ title: this.props.title });
+  }
   render() {
-    return <div className="greeting">{}</div>;
+    return <div className="Title">{this.state.title}</div>;
   }
 }
