@@ -1,0 +1,4 @@
+     {this.props.comments.map((item) => {
+         <li key={item.username}>{item.username}</li>
+         <li key={item.text}>{item.text}</li>
+     )}

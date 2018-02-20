@@ -1,12 +1,37 @@
 import React, { Component } from "react";
+import CommentList from "./commentList";
 
-export default class ComponentName extends Component {
-  constructor() {
-    super();
-    this.state = {};
+const comments = [
+  {
+    username: "twitch",
+    text: "Epic Street Fighter action here in Las Vegas at #EVO2017!"
+  },
+  {
+    username: "michaelmarzetta",
+    text: "Omg that match was crazy"
+  },
+  {
+    username: "themexican_leprechaun",
+    text: "What a setup"
+  },
+  {
+    username: "dennis_futbol",
+    text: "It that injustice"
+  },
+  {
+    username: "dennis_futbol",
+    text: "Is"
   }
-  componentDidMount() {}
+];
+
+class Fourth extends Component {
   render() {
-    return <div className="greeting">{}</div>;
+    return (
+      <div>
+        <CommentList comments={comments}/>
+      </div>
+    );   
   }
 }
+
+export default Fourth;

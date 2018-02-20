@@ -14,7 +14,7 @@ class App extends Component {
     return (
       <div className="App">
         <Second blanket={"Blanky"} />
-        <Third />
+        <Third title={"Lambda School"} />
         <Fourth />
         <Fifth />
         <Sixth />

@@ -3,7 +3,8 @@ import React, { Component } from "react";
 export default class ComponentName extends Component {
   constructor() {
     super();
-    this.state = {};
+      this.state = {
+    };
   }
   componentDidMount() {
     this.setState({ blanket: this.props.blanket });
